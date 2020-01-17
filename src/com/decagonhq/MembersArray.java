@@ -8,6 +8,10 @@ import java.util.List;
 public class MembersArray {
     private ArrayList<Members> members;
 
+//    public MembersArray(ArrayList<Members> members) {
+//        this.members = members;
+//    }
+
     public ArrayList<Members> getMembers() {
         return members;
     }
@@ -16,11 +20,15 @@ public class MembersArray {
         this.members = members;
     }
 
+    public MembersArray(ArrayList<Members> members) {
+        this.members = members;
+    }
+
     public MembersArray() {
         this.members = new ArrayList<Members>();
     }
 
-    public boolean addMember(String name, String level){
+    public boolean addMember(String name, int level){
         if(findMember(name) == null){
             this.members.add(new Members(name, level));
             return true;
