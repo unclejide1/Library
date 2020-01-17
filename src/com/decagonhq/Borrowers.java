@@ -9,6 +9,9 @@ public class Borrowers {
         this.bookTitle = bookTitle;
     }
 
+    public Borrowers() {
+    }
+
     public String getName() {
         return name;
     }
