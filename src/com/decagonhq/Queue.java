@@ -7,7 +7,7 @@ public class Queue {
     private int rear;
 
     public int enqueue(Borrowers data){
-        for (int i = 0; i < size; i++) {
+        for (int i = front; i < size; i++) {
             Borrowers b = queue[i];
             if (data.getName().equals(b.getName())) {
 //                System.out.println( data.getName() + " already exists in the queue");
@@ -30,17 +30,22 @@ public class Queue {
             System.out.print(queue[i].toString() + " ");
         }
     }
+
     public void show2(){
+        System.out.println();
+        System.out.print("[");
         for(int i = 0; i<size; i++){
-            System.out.print(queue[(front+i)%5].toString() + " , ");
+            System.out.print(queue[(front+i)%5].toString() + " ,");
         }
+        System.out.print("]");
+        System.out.println();
     }
 
     public Borrowers dequeue(){
         if(!isEmpty()) {
             Borrowers data = queue[front];
-            Borrowers newData = new Borrowers("temp", "temp");
-            queue[front] = newData;
+//            Borrowers newData = new Borrowers("temp", "temp");
+//            queue[front] = newData;
             System.out.println(data + " was deleted from the queue");
             front = (front + 1) % 5;
             size = size - 1;
