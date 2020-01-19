@@ -75,12 +75,13 @@ public class Library extends MembersArray{
 
     public void addToBorrowersList(Queue borrowers, MembersArray memb,String name, String bookTitle) {
         Iterator<Members> iterator = memb.getMembers().iterator();
+        time = new Date();
 //        System.out.println("");
 
         while (iterator.hasNext()) {
             if ((iterator.next().getName().equals(name))) {
                     if(borrowers.enqueue(new Borrowers(name, bookTitle)) == 0) {
-                        System.out.println(name + " is allowed to borrow " + bookTitle + ", he is not in the queue");
+                        System.out.println(name + " is allowed to borrow " + bookTitle + ", he is not in the queue" + " on " +time);
                         return;
                     } else if(borrowers.enqueue(new Borrowers(name, bookTitle)) == -1) {
                         System.out.println( name + " can't borrow again  because he is in the queue");

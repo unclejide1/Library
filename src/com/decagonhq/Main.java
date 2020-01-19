@@ -19,24 +19,24 @@ public class Main {
         memberss.addMember("justice", 2);
         memberss.addMember("mike", 3);
 
-        printList(memberss);
+//        printList(memberss);
 
-        Decagon.addToBorrowersList2(memberss,"jide", "things fall apart", 1);
-        Decagon.addToBorrowersList2(memberss,"justice", "things fall apart", 2);
-        Decagon.addToBorrowersList2(memberss,"david", "things fall apart2", 2);
-        Decagon.addToBorrowersList2(memberss,"mikel", "things fall apart", 3);
-
-        Decagon.addToBorrowersList2(memberss,"mike", "things fall apart", 3);
-        Decagon.addToBorrowersList2(memberss,"ebi", "things fall apart", 1);
-        Decagon.addToBorrowersList2(memberss,"james", "things fall apart", 1);
-        System.out.println(Decagon.getBooksBorrowedDetails());
-        Decagon.lendOutBooks2();
-        Decagon.lendOutBooks2();
-        Decagon.lendOutBooks2();
-        Decagon.lendOutBooks2();
+//        Decagon.addToBorrowersList2(memberss,"jide", "things fall apart", 1);
+//        Decagon.addToBorrowersList2(memberss,"justice", "things fall apart", 2);
+//        Decagon.addToBorrowersList2(memberss,"david", "things fall apart2", 2);
+//        Decagon.addToBorrowersList2(memberss,"mikel", "things fall apart", 3);
+//
+//        Decagon.addToBorrowersList2(memberss,"mike", "things fall apart", 3);
+//        Decagon.addToBorrowersList2(memberss,"ebi", "things fall apart", 1);
+//        Decagon.addToBorrowersList2(memberss,"james", "things fall apart", 1);
+//        System.out.println(Decagon.getBooksBorrowedDetails());
+//        Decagon.lendOutBooks2();
+//        Decagon.lendOutBooks2();
+//        Decagon.lendOutBooks2();
+//        Decagon.lendOutBooks2();
 //        Decagon.lendOutBooks2();
 //        Decagon.lendOutBooks(Decagon.getBorrowers(), Decagon.getBooks());
-//        Decagon.addToBorrowersList(Decagon.getBorrowers(), memberss,"david", "things fall apart");
+        Decagon.addToBorrowersList(Decagon.getBorrowers(), memberss,"david", "things fall apart");
 //        Decagon.lendOutBooks(Decagon.getBorrowers(), Decagon.getBooks());
 //        Decagon.lendOutBooks(Decagon.getBorrowers(), Decagon.getBooks());
 //        Decagon.addToBorrowersList(Decagon.getBorrowers(), memberss,"mikel", "things fall apart");
